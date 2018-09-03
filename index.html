@@ -13,14 +13,29 @@
     .myname{background-color: rgba(0,0,0,0.8);color: white;}
     .title{background-color: white;font-size: 40px;}
 
-    .min{}
+    .min img{width: 100%;}
 </style>
 <body class="container">
 <div class="top container">
     <p class="title">大帅哥<span class="myname">张学东</span>的个人简历</p>
 </div>
-<div class="min">
-
+<div class="study container">
+    
+</div>
+<div class="min container">
+    <div><img src="img/318041.jpg"></div>
+    <div><img src="img/321075.jpg"></div>
 </div>
 </body>
+<script>
+    $(function(){
+        $(window).scroll(function () {
+            if ($(window).scrollTop()>250) {
+                alert(111)
+            } else {
+                $("#opp").addClass("v");
+            }
+        })
+    })
+</script>
 </html>
